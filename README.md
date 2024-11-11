@@ -1,6 +1,7 @@
+# Developer Name : A.Anbuselvam 
+# Reg no : 212222240009
 # Exp.no: 10   IMPLEMENTATION OF SARIMA MODEL
 ### Date: 
-
 ### AIM:
 To implement SARIMA model using python.
 ### ALGORITHM:
@@ -10,8 +11,7 @@ To implement SARIMA model using python.
 4. Fit a SARIMA model with specified order and seasonal parameters on the training set.
 5. Generate and plot forecasted values against actual data, then print forecasted grades.
 ### PROGRAM:
-```
-# Import necessary libraries
+```# Import necessary libraries
 import pandas as pd
 import numpy as np
 from statsmodels.tsa.statespace.sarimax import SARIMAX
@@ -43,7 +43,6 @@ model_fit = model.fit(disp=False)
 
 # Forecast
 forecast = model_fit.forecast(steps=len(test))
-
 # Plot the results
 plt.figure(figsize=(10, 6))
 plt.plot(series.index, series, label='Actual Final Grade')
@@ -53,7 +52,6 @@ plt.xlabel('Index')
 plt.ylabel('Final Grade')
 plt.legend()
 plt.show()
-
 # Print the forecasted values
 print("Forecasted Final Grade values:", forecast)
 ```
